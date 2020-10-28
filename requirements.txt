@@ -1,0 +1,4 @@
+pipwin
+pyaudio
+SpeechRecognition
+pynput
