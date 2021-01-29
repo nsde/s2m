@@ -9,7 +9,7 @@ keyboard = Controller()
 time.sleep(3)
 
 while 1:
-    time.sleep(0.3)
+    time.sleep(0.05)
 
     with speech.Microphone() as source:
         audio_data = r.record(source, duration=5)
@@ -23,15 +23,15 @@ while 1:
 
     if text:
         pydirectinput.keyDown('t')
-        time.sleep(0.1)
+        time.sleep(0.05)
         pydirectinput.keyUp('t')
 
-        time.sleep(0.2)
+        time.sleep(0.05)
 
         keyboard.type(text)
 
-        time.sleep(0.2)
+        time.sleep(0.05)
 
         pydirectinput.keyDown('enter')
-        time.sleep(0.1)
+        time.sleep(0.05)
         pydirectinput.keyUp('enter')
